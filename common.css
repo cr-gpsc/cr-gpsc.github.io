@@ -237,7 +237,7 @@ p {
 }
 
 p.info {
-	font-size: 32px;
+	font-size: 25px;
 	max-width: 750px;
 	line-height: 1.5em;
 	text-align: center;
@@ -265,14 +265,16 @@ p.info {
 .howto-step img {
 	max-width: 100%;
 	border-radius: 3px;
+	margin-bottom: 5rem;
 }
 
 .howto-visual {
-	margin-bottom: 3rem;
+	margin-bottom: 5rem;
 }
 
 .howto-step p {
 	max-width: 410px;
+	margin-bottom: 2rem;
 }
 
 
