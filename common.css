@@ -68,7 +68,7 @@ header {
 	position: relative;
 	z-index: 2;
 	overflow: hidden;
-	background-image: url('stream.png'), linear-gradient(0deg, #777777 0%, #aaaaaa 100%);
+	background-image: url('asset0.JPG'), linear-gradient(0deg, #777777 0%, #aaaaaa 100%);
 	background-size: 100%;
 	background-blend-mode: multiply;
 	background-repeat: no-repeat;
@@ -279,10 +279,7 @@ p.info {
 
 
 @media (max-width: 1000px) {
-	.top-bar .left-links {
-		width: auto;
-		flex-grow: 1;
-	}
+	
 
 	header h1 {
 		font-size: 3rem;
@@ -317,23 +314,10 @@ p.info {
 }
 
 @media (max-width: 850px) {
-	header,
+
 	section,
 	main {
 		padding: 1.5rem;
-	}
-
-	.top-bar .left-links {
-		flex-grow: 0;
-	}
-
-	.top-bar .links {
-		text-align: left;
-	}
-
-	.top-bar .links a {
-		display: block;
-		line-height: 2rem;
 	}
 
 	#logo {
@@ -350,7 +334,7 @@ p.info {
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 
 
 	header h2 {
@@ -372,20 +356,21 @@ p.info {
 	
 	header {
 		background-size: 250%;
+		padding: 1.5rem;
 	}
 
 	img.shadowed {
 		box-shadow: none;
 	}
-}
-
-@media (max-width: 500px) {
+	
 	.top-bar {
 		flex-direction: column;
 		text-align: center;
 	}
 
 	.top-bar .left-links {
+		width: auto;
+		flex-grow: 1;
 		margin-bottom: 1rem;
 	}
 
