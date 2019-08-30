@@ -68,7 +68,7 @@ header {
 	position: relative;
 	z-index: 2;
 	overflow: hidden;
-	background-image: url('asset0.JPG'), linear-gradient(0deg, #777777 0%, #aaaaaa 100%);
+	background-image: url('media/banner.jpg'), linear-gradient(0deg, #777777 0%, #aaaaaa 100%);
 	background-size: 100%;
 	background-blend-mode: multiply;
 	background-repeat: no-repeat;
@@ -144,6 +144,31 @@ h4 {
 	font-size: 1.25rem;
 }
 
+
+button,
+.button {
+	font-family: 'Source Sans Pro', sans-serif;
+	border: 0;
+	background: #FFF;
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: #2870ff;
+	padding: 12px 20px;
+	cursor: pointer;
+	margin: auto;
+	border-radius: 5px;
+	display: block;
+	box-shadow: 0 5px 8px rgba(0, 0, 0, .2);
+	transition: all .25s ease;
+	outline: none;
+}
+
+button:hover,
+.button:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 8px 10px rgba(0, 0, 0, .2);
+}
+
 nav.main {
 	padding: 1rem;
 	text-align: center;
@@ -159,45 +184,6 @@ nav.main a {
 .shadowed {
 	box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
 }
-
-
-
-footer .nav-container {
-	background-color: #3d3d3d;
-	color: #CCC;
-	padding: 2rem;
-}
-
-footer .nav-container .flex {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-footer .col,
-footer nav {
-	padding: 1rem 2rem 1rem 0;
-}
-
-footer .col {
-	line-height: 1.5rem;
-}
-
-
-footer nav a {
-	color: inherit;
-	display: block;
-	margin: .5rem 0;
-}
-
-footer nav a:hover {
-	color: #FFF;
-}
-
-
-.text-left { text-align: left; }
-.text-center { text-align: center; }
-.text-right { text-align: right; }
 
 h1 {
 	color: #FFF;
@@ -236,6 +222,10 @@ p {
 	color: #013d69;
 }
 
+.people {
+	background: linear-gradient(#d5f3ff 0%, white 20%, white 100%);
+}
+
 p.info {
 	font-size: 25px;
 	max-width: 750px;
@@ -263,6 +253,25 @@ p.info {
 }
 
 .howto-step img {
+	max-width: 100%;
+	border-radius: 3px;
+	margin-bottom: 5rem;
+}
+
+.bio-list {
+	display: flex;
+	padding: 0 10%;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.bio {
+	padding: 0 1rem;
+	flex-basis: 50%;
+	flex-grow: 1;
+}
+
+.bio img {
 	max-width: 100%;
 	border-radius: 3px;
 	margin-bottom: 5rem;
@@ -318,6 +327,10 @@ p.info {
 	section,
 	main {
 		padding: 1.5rem;
+	}
+
+	.bio-list {
+		padding: 0;
 	}
 
 	#logo {
